@@ -34,15 +34,15 @@ class _PruebaState extends State<Clases> {
 
   Future<void> loadFileAndAssign() async {
     String data =
-        await loadFileData('documentos_Asignaturas/Ingenieria_Informatica.txt');
+        await loadFileData('Ingenieria_Informatica.txt');
     setState(() {
       assigIngInf = data;
     });
-    data = await loadFileData('documentos_Asignaturas/Ingenieria_Mecanica.txt');
+    data = await loadFileData('Ingenieria_Mecanica.txt');
     setState(() {
       assigIngMec = data;
     });
-    data = await loadFileData('documentos_Asignaturas/info_packs.txt');
+    data = await loadFileData('info_packs.txt');
     setState(() {
       infoPacks = data;
     });

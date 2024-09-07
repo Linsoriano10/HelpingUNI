@@ -58,7 +58,7 @@ class _PruebaState extends State<Clases> {
       return data;
     } catch (e) {
       setState(() {
-        fileContent = 'Error al cargar el archivo + $e';
+        fileContent = 'Error al cargar el archivoccc + $e';
       });
     }
     return fileContent;

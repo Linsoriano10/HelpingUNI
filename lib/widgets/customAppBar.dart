@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helpinguni/pages/precios.dart';
 
 import '../pages/clases.dart';
 import '../pages/contacto.dart';
@@ -60,7 +61,7 @@ class WidgetCustomAppBar extends StatelessWidget
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const Clases()),
+              MaterialPageRoute(builder: (context) => const Precios()),
             );
           },
           child: const Text(

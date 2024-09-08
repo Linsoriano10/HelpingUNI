@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "c1a301e93848ac4d95f3c7dbe896bb7d",
-"assets/AssetManifest.bin.json": "d6f490723af24bc6931a0c06c775f598",
-"assets/AssetManifest.json": "1dbfbb95e33babcce82b0cc10d6c1e1d",
+const RESOURCES = {"assets/AssetManifest.bin": "df2b6c74e0637c23d437d652f27debe5",
+"assets/AssetManifest.bin.json": "ac97222e6d4758b09c71be425fc4d5b4",
+"assets/AssetManifest.json": "3fceae25287b3908bc521c5a22573586",
 "assets/assets/ADE.txt": "5880a13c323a680b487550c3c5e45661",
 "assets/assets/Audiovisuales.txt": "95d04c99c337dbe376f335137df011f8",
 "assets/assets/Cafe.txt": "4e017d8c6ae9fd14fe67fc1dad13c529",
@@ -13,7 +13,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "c1a301e93848ac4d95f3c7dbe896bb7d
 "assets/assets/Ingenieria_Electronica.txt": "6673f555fee843f01f931cce08127280",
 "assets/assets/Ingenieria_Informatica.txt": "a0496292c50877bb330c4cefeee3a28b",
 "assets/assets/Ingenieria_Mecanica.txt": "8b6dbb92e4690d1f38c1b7e1b0e8a076",
-"assets/assets/Logistica.txt": "241bfccc8f9d9093aa1845f42b2ff64f",
+"assets/assets/logistica.txt": "241bfccc8f9d9093aa1845f42b2ff64f",
 "assets/assets/logo.png": "4a6b7ad991b3f2bc22261c09ca7626e3",
 "assets/assets/Marqueting.txt": "49ffab5eefd164e9461c45a9e3bd054b",
 "assets/assets/Turismo.txt": "ce247a3e567dce079d0b09d3ece2106a",
@@ -35,14 +35,14 @@ const RESOURCES = {"assets/AssetManifest.bin": "c1a301e93848ac4d95f3c7dbe896bb7d
 "canvaskit/skwasm.worker.js": "89990e8c92bcb123999aa81f7e203b1c",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "f393d3c16b631f36852323de8e583132",
-"flutter_bootstrap.js": "b26f88c0f2453ab1bf9f125330c0ace7",
+"flutter_bootstrap.js": "1ccaf528efa4b16ecf1cefba21b10c9a",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "index.html": "b8df40e3c5492454563f44010e215206",
 "/": "b8df40e3c5492454563f44010e215206",
-"main.dart.js": "5075304f8dd3f5044dd2144b159b8ac8",
+"main.dart.js": "193e7f5dc4c569a33a5158d1661e2c8c",
 "manifest.json": "a4fa7527173a60d16cd73a3e3b16f989",
 "version.json": "1484b77ad230fcf23f1e04f04fc50320"};
 // The application shell files that are downloaded before a service worker can

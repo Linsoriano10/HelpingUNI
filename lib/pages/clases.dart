@@ -52,7 +52,6 @@ class _PruebaState extends State<Clases> {
     setState(() {
       assigIngElec = data;
     });
-
     data = await loadFileData('assets/Marqueting.txt');
     setState(() {
       assigMarqueting = data;
@@ -69,7 +68,7 @@ class _PruebaState extends State<Clases> {
     setState(() {
       assigAde = data;
     });
-    data = await loadFileData('assets/Logistica.txt');
+    data = await loadFileData('assets/logistica.txt');
     setState(() {
       assigLogistica = data;
     });

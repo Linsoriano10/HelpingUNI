@@ -72096,7 +72096,7 @@ case 9:o.a=b
 q.a6(new A.adv(p,q))
 o=p
 s=10
-return A.T(q.es("assets/Logistica.txt"),$async$er)
+return A.T(q.es("assets/logistica.txt"),$async$er)
 case 10:o.a=b
 q.a6(new A.adw(p,q))
 return A.P(null,r)}})

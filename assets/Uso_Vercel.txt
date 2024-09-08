@@ -1,0 +1,15 @@
+Uso Vercel:
+
+Vercel usa los archivos en la carpeta que le indiques (en este caso build/web)
+
+Cambiar archivos no cambia los archivos dentro de la carpeta build/web
+
+Hacer cambios sin hacer una limpieza no resulta en ningún cambio
+
+Para hacer una limpieza se limpia la carpeta con "flutter clean web" (desde VS code)
+
+Luego se recontruye la carpeta web con "flutter build web"
+
+Finalmente un push al GitHub para guardar los cambios de la pagina web. 
+
+En pocos minutos (como mucho) la web será actualizada. 

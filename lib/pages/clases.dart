@@ -68,6 +68,10 @@ class _PruebaState extends State<Clases> {
     setState(() {
       assigCAFE = data;
     });
+    data = await loadFileData('assets/ADE.txt');
+    setState(() {
+      assigAde = data;
+    });
   }
 
   Future<String> loadFileData(String path) async {

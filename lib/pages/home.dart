@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     const Text(
-                      'Asignaturas',
+                      'Grados Universitarios',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 35,
@@ -40,14 +40,14 @@ class MyHomePage extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     const Text(
-                      'Matematicas de todos los grados\n Estadistica & Stata \n '
-                      'Informatica: Java, C++, JavaScript, SQL\n'
-                      'Medios Audiovisuales & P5.JS \n '
-                      'Metodos cuantitativos \n '
-                      'Derecho mercantil y laboral \n'
-                      'Fisica \n'
-                      'Definicion de Precios(Grado Marketing) \n'
-                      'Contabilidad I & Contabilidad (Grado Marketing) \n',
+                      'Ingenieria Informatica \n '
+                      'Ingenieria Electronica\n'
+                      'Ingenieria Mecanica \n '
+                      'Logistica \n '
+                      'ADE\n'
+                      'Turismo \n'
+                      'Audiovisuales\n'
+                      'Marqueting \n',
                       style: TextStyle(color: Colors.black, fontSize: 25),
                       textAlign: TextAlign.center,
                     ),

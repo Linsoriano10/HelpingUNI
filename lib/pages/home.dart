@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                     const Text(
                       'Matematicas de todos los grados\n Estadistica & Stata \n '
-                      'Informatica: Java, C++, SQL, JavaScript\n'
+                      'Informatica: Java, C++, JavaScript, SQL\n'
                       'Medios Audiovisuales & P5.JS \n '
                       'Metodos cuantitativos \n '
                       'Derecho mercantil y laboral \n'

@@ -21,7 +21,7 @@ class _PruebaState extends State<Precios> {
   }
   Future<void> loadFileAndAssign() async {
 
-    String data = await loadFileData('info_packs.txt');
+    String data = await loadFileData('assets/info_packs.txt');
     setState(() {
       infoPacks = data;
     });

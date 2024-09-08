@@ -72114,7 +72114,7 @@ $S:88}
 A.p9.prototype={
 L(a){var s=this,r=null,q={}
 q.a=q.b=q.c=""
-q=A.p5(A.b([B.OA,B.OG,B.Oy,A.ajp(s.d,B.C5,1,new A.UV(q)),B.jm,A.ajp(s.e,B.C4,1,new A.UW(q)),B.OC,B.jm,A.ajp(s.f,B.C3,4,new A.UX(q)),B.jm,A.eW(new A.EQ(new A.UY(q,s),r,r,r,r,r,r,!1,r,!0,B.OD,r),r,r)],t.E),B.bG,B.be,B.bw)
+q=A.p5(A.b([B.OB,B.OG,B.Oz,A.ajp(s.d,B.C5,1,new A.UV(q)),B.jm,A.ajp(s.e,B.C4,1,new A.UW(q)),B.OD,B.jm,A.ajp(s.f,B.C3,4,new A.UX(q)),B.jm,A.eW(new A.EQ(new A.UY(q,s),r,r,r,r,r,r,!1,r,!0,B.OE,r),r,r)],t.E),B.bG,B.be,B.bw)
 return A.a5f(B.Q8,new A.di(B.i6,new A.vd(q,B.k9,s.c),r))}}
 A.UV.prototype={
 $1(a){if(a.length===0)return"Introduce tu nombre y apellidos"
@@ -72149,7 +72149,7 @@ A.pV.prototype={
 L(a){return A.a5f(B.xh,new A.pG(new A.a2Q(),null))}}
 A.a2Q.prototype={
 $2(a,b){var s=null
-return A.a6C(A.eW(new A.di(B.i6,A.p5(A.b([B.OH,B.wI,B.OF,B.OE,new A.hc(B.Q,s,s,A.jM(A.aw1(B.Or,!1,new A.a2P(a),new A.cn(A.ai_(8),B.n)),60,180),s),B.K5,B.I7,B.wI,B.I6],t.E),B.cC,B.cM,B.bw),s),s,s))},
+return A.a6C(A.eW(new A.di(B.i6,A.p5(A.b([B.OH,B.wI,B.OF,B.Ou,new A.hc(B.Q,s,s,A.jM(A.aw1(B.Or,!1,new A.a2P(a),new A.cn(A.ai_(8),B.n)),60,180),s),B.K5,B.I7,B.wI,B.I6],t.E),B.cC,B.cM,B.bw),s),s,s))},
 $S:88}
 A.a2P.prototype={
 $0(){var s=A.pP(new A.a2O(),null,t.z)
@@ -72167,7 +72167,7 @@ ih(){var s=0,r=A.R(t.H),q=this,p
 var $async$ih=A.S(function(a,b){if(a===1)return A.O(b,r)
 while(true)switch(s){case 0:p=A
 s=2
-return A.X(q.ii("info_packs.txt"),$async$ih)
+return A.X(q.ii("assets/info_packs.txt"),$async$ih)
 case 2:q.af(new p.adr(q,b))
 return A.P(null,r)}})
 return A.Q($async$ih,r)},
@@ -72221,7 +72221,7 @@ A.he.prototype={
 L(a){var s=null
 return A.p5(A.b([A.h0(this.c,s,s,s,B.L9,s,s),A.jM(new A.mr(B.cN,A.a6C(A.h0(this.d,s,s,s,B.Lk,B.bQ,s)),s),600,300)],t.E),B.aV,B.cM,B.bw)}}
 A.r3.prototype={
-L(a){var s=null,r=A.h0(this.c,s,s,s,B.d5,s,s),q=A.amF(s,B.C1,new A.a8N(a),s,s),p=A.b([A.yb(B.Op,new A.a8O(a),s),B.jl,A.yb(B.Ov,new A.a8P(a),s),B.jl,A.yb(B.Ou,new A.a8Q(a),s),B.jl,A.yb(B.Ow,new A.a8R(a),s),B.K3],t.E)
+L(a){var s=null,r=A.h0(this.c,s,s,s,B.d5,s,s),q=A.amF(s,B.C1,new A.a8N(a),s,s),p=A.b([A.yb(B.Op,new A.a8O(a),s),B.jl,A.yb(B.Ow,new A.a8P(a),s),B.jl,A.yb(B.Ov,new A.a8Q(a),s),B.jl,A.yb(B.Ox,new A.a8R(a),s),B.K3],t.E)
 return new A.tD(q,r,p,B.cN,new A.O9(100,s,1/0,100),100,100,s)}}
 A.a8N.prototype={
 $0(){var s=A.pP(new A.a8M(),null,t.z)
@@ -77426,17 +77426,17 @@ B.vM=new A.qh(2,"bubble")
 B.I5=new A.hE(null,null)
 B.bW=new A.a8y(1,"down")
 B.ju=new A.m(!0,B.l,null,null,null,null,30,B.cJ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.OB=new A.cg("Quienes Somos?",null,B.ju,B.au,null,null,null,null,null)
-B.BB=new A.pp(B.OB,null)
+B.OC=new A.cg("Quienes Somos?",null,B.ju,B.au,null,null,null,null,null)
+B.BB=new A.pp(B.OC,null)
 B.jv=new A.m(!0,B.l,null,null,null,null,20,B.cJ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Oz=new A.cg("Alumnos de grados de empresa, ingenier\xeda y medios audiovisuales con un nivel acad\xe9mico excelente",null,B.jv,B.au,null,null,null,null,null)
-B.K6=new A.fh(400,null,B.Oz,null)
+B.OA=new A.cg("Alumnos de grados de empresa, ingenier\xeda y medios audiovisuales con un nivel acad\xe9mico excelente",null,B.jv,B.au,null,null,null,null,null)
+B.K6=new A.fh(400,null,B.OA,null)
 B.xF=new A.hc(B.Q,null,null,B.K6,null)
 B.BA=new A.pp(B.xF,null)
 B.Dh=A.b(s([B.BB,B.BA]),t.E)
 B.I6=new A.qi(B.aD,B.cM,B.bw,B.aV,null,B.bW,null,B.Dh,null)
-B.Ox=new A.cg("Primera clase 2h gratuitas\nClases individuales\nClases de grupos reducidos, maximo 6 alumnos\nClases online o presenciales\n",null,B.jv,B.au,null,null,null,null,null)
-B.Dk=A.b(s([B.Ox]),t.E)
+B.Oy=new A.cg("Primera clase 2h gratuitas\nClases individuales\nClases de grupos reducidos, maximo 6 alumnos\nClases online o presenciales\n",null,B.jv,B.au,null,null,null,null,null)
+B.Dk=A.b(s([B.Oy]),t.E)
 B.Af=new A.ud(B.aO,B.be,B.bw,B.bG,null,B.bW,null,B.Dk,null)
 B.xG=new A.hc(B.Q,null,null,B.Af,null)
 B.Bz=new A.pp(B.xG,null)
@@ -77965,17 +77965,17 @@ B.Or=new A.cg("Consultar Asignaturas",null,null,B.au,null,null,null,null,null)
 B.x2=new A.m(!0,B.l,null,null,null,null,10,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Os=new A.cg("Precios por persona en el pack\n",null,B.x2,B.au,null,null,null,null,null)
 B.Ot=new A.cg("Precios por persona en el pack\n",null,B.x2,null,null,null,null,null,null)
+B.Ou=new A.cg("Matematicas de todos los grados\n Estadistica & Stata \n Informatica: Java, C++, JavaScript, SQL\nMedios Audiovisuales & P5.JS \n Metodos cuantitativos \n Derecho mercantil y laboral \nFisica \nDefinicion de Precios(Grado Marketing) \nContabilidad I & Contabilidad (Grado Marketing) \n",null,B.d5,B.au,null,null,null,null,null)
 B.x5=new A.cg("Packs de clases",null,B.jv,B.au,null,null,null,null,null)
-B.Ou=new A.cg("PRECIOS",null,B.d5,null,null,null,null,null,null)
-B.Ov=new A.cg("ASSIGNATURAS",null,B.d5,null,null,null,null,null,null)
-B.Ow=new A.cg("CONTACTO",null,B.d5,null,null,null,null,null,null)
-B.Oy=new A.cg("Un coordinador se pondr\xe1 en contacto contigo lo antes posible\n",null,B.h5,B.bQ,null,null,null,null,null)
+B.Ov=new A.cg("PRECIOS",null,B.d5,null,null,null,null,null,null)
+B.Ow=new A.cg("ASSIGNATURAS",null,B.d5,null,null,null,null,null,null)
+B.Ox=new A.cg("CONTACTO",null,B.d5,null,null,null,null,null,null)
+B.Oz=new A.cg("Un coordinador se pondr\xe1 en contacto contigo lo antes posible\n",null,B.h5,B.bQ,null,null,null,null,null)
 B.x_=new A.m(!0,B.l,null,null,null,null,35,B.cJ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.OA=new A.cg("Contacto",null,B.x_,B.bQ,null,null,null,null,null)
-B.OC=new A.cg("AVISO: No recibimos correos que no sean universitarios, los mensajes seran eliminados",null,null,null,null,null,null,null,null)
+B.OB=new A.cg("Contacto",null,B.x_,B.bQ,null,null,null,null,null)
+B.OD=new A.cg("AVISO: No recibimos correos que no sean universitarios, los mensajes seran eliminados",null,null,null,null,null,null,null,null)
 B.x6=new A.cg("Precios",null,B.ju,B.au,null,null,null,null,null)
-B.OD=new A.cg("Enviar",null,null,null,null,null,null,null,null)
-B.OE=new A.cg("Matematicas de todos los grados\n Estadistica & Stata \n Informatica: Java, C++, SQL, JavaScript\nMedios Audiovisuales & P5.JS \n Metodos cuantitativos \n Derecho mercantil y laboral \nFisica \nDefinicion de Precios(Grado Marketing) \nContabilidad I & Contabilidad (Grado Marketing) \n",null,B.d5,B.au,null,null,null,null,null)
+B.OE=new A.cg("Enviar",null,null,null,null,null,null,null,null)
 B.OF=new A.cg("Asignaturas",null,B.x_,B.au,null,null,null,null,null)
 B.MB=new A.m(!0,B.l,null,null,null,null,20,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.OG=new A.cg("Ponte en contacto con nosotros y haznos tus preguntas",null,B.MB,B.bQ,null,null,null,null,null)

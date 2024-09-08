@@ -34,15 +34,15 @@ class _PruebaState extends State<Clases> {
 
   Future<void> loadFileAndAssign() async {
     String data =
-        await loadFileData('Ingenieria_Informatica.txt');
+        await loadFileData('assets/Ingenieria_Informatica.txt');
     setState(() {
       assigIngInf = data;
     });
-    data = await loadFileData('Ingenieria_Mecanica.txt');
+    data = await loadFileData('assets/Ingenieria_Mecanica.txt');
     setState(() {
       assigIngMec = data;
     });
-    data = await loadFileData('info_packs.txt');
+    data = await loadFileData('assets/info_packs.txt');
     setState(() {
       infoPacks = data;
     });
@@ -58,7 +58,7 @@ class _PruebaState extends State<Clases> {
       return data;
     } catch (e) {
       setState(() {
-        fileContent = 'Error al cargar el archivoccc + $e';
+        fileContent = 'Error al cargar el archivo + $e';
       });
     }
     return fileContent;

@@ -72044,17 +72044,17 @@ var $async$ih=A.S(function(a,b){if(a===1)return A.O(b,r)
 while(true)switch(s){case 0:p={}
 o=p
 s=2
-return A.X(q.ii("Ingenieria_Informatica.txt"),$async$ih)
+return A.X(q.ii("assets/Ingenieria_Informatica.txt"),$async$ih)
 case 2:o.a=b
 q.af(new A.ado(p,q))
 o=p
 s=3
-return A.X(q.ii("Ingenieria_Mecanica.txt"),$async$ih)
+return A.X(q.ii("assets/Ingenieria_Mecanica.txt"),$async$ih)
 case 3:o.a=b
 q.af(new A.adp(p,q))
 o=p
 s=4
-return A.X(q.ii("info_packs.txt"),$async$ih)
+return A.X(q.ii("assets/info_packs.txt"),$async$ih)
 case 4:o.a=b
 q.af(new A.adq(p,q))
 return A.P(null,r)}})
@@ -72105,7 +72105,7 @@ A.ads.prototype={
 $0(){this.b.d=this.a.a},
 $S:0}
 A.adt.prototype={
-$0(){this.a.d="Error al cargar el archivoccc + "+A.l(this.b)},
+$0(){this.a.d="Error al cargar el archivo + "+A.l(this.b)},
 $S:0}
 A.adm.prototype={
 $2(a,b){var s=null,r="Ingenieria Informatica",q="Ingenieria Mecanica",p=this.a,o=t.E

@@ -24,7 +24,10 @@ class _PruebaState extends State<Clases> {
   String assigIngMec = '';
   String assigTurismo = '';
   String assigAudioVisuales = '';
-  String infoPacks = '';
+  String assigAde = '';
+  String assigMarqueting = '';
+  String assigLogistica = '';
+  String assigCAFE = '';
 
   @override
   void initState() {
@@ -33,8 +36,7 @@ class _PruebaState extends State<Clases> {
   }
 
   Future<void> loadFileAndAssign() async {
-    String data =
-        await loadFileData('assets/Ingenieria_Informatica.txt');
+    String data = await loadFileData('assets/Ingenieria_Informatica.txt');
     setState(() {
       assigIngInf = data;
     });
@@ -42,9 +44,29 @@ class _PruebaState extends State<Clases> {
     setState(() {
       assigIngMec = data;
     });
-    data = await loadFileData('assets/info_packs.txt');
+    data = await loadFileData('assets/Audiovisuales.txt');
     setState(() {
-      infoPacks = data;
+      assigAudioVisuales = data;
+    });
+    data = await loadFileData('assets/Ingenieria_Electronica.txt');
+    setState(() {
+      assigIngElec = data;
+    });
+    data = await loadFileData('assets/Logistica.txt');
+    setState(() {
+      assigLogistica = data;
+    });
+    data = await loadFileData('assets/Marqueting.txt');
+    setState(() {
+      assigMarqueting = data;
+    });
+    data = await loadFileData('assets/Turismo.txt');
+    setState(() {
+      assigTurismo = data;
+    });
+    data = await loadFileData('assets/Cafe.txt');
+    setState(() {
+      assigCAFE = data;
     });
   }
 
@@ -76,47 +98,6 @@ class _PruebaState extends State<Clases> {
               child: Column(
                 children: [
                   const Text(
-                    'Precios',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    'Clases individuales:15€/h \n'
-                    'Clases grupales: 10€/h*persona\n',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    'Packs de clases',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  Text(
-                    infoPacks,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                    ),
-                  ),
-                  const Text(
-                    'Precios por persona en el pack\n',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 10,
-                    ),
-                  ),
-                  const Text(
                     'Assignaturas',
                     style: TextStyle(
                       color: Colors.black,
@@ -125,59 +106,81 @@ class _PruebaState extends State<Clases> {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  Center(//inicio fila de espacios de assignaturas
+                  Center(
+                    //inicio fila de espacios de assignaturas
                     child: Wrap(
                       spacing: 40, // Espacio entre las columnas
                       runSpacing: 40, // Espacio entre filas si se desbordan
                       alignment: WrapAlignment.center,
                       children: [
-
-                        Assignaturasinfo(titulo: 'Ingenieria Informatica',texto: assigIngInf,),
-
-                        Assignaturasinfo(titulo: 'Ingenieria Mecanica',texto: assigIngMec,),
-
+                        Assignaturasinfo(
+                          titulo: 'Ingenieria Informatica',
+                          texto: assigIngInf,
+                        ),
+                        Assignaturasinfo(
+                          titulo: 'Ingenieria Mecanica',
+                          texto: assigIngMec,
+                        ),
                       ],
                     ),
-                  ),//final fila de espacios de assignaturas
+                  ), //final fila de espacios de assignaturas
                   const SizedBox(
                     width: 40,
                     height: 40,
                   ),
-                  Center( //inicio fila de espacios de assignaturas
+                  Center(
+                    //inicio fila de espacios de assignaturas
                     child: Wrap(
                       spacing: 40, // Espacio entre las columnas
                       runSpacing: 40, // Espacio entre filas si se desbordan
                       alignment: WrapAlignment.center,
                       children: [
-                         Assignaturasinfo(titulo: 'Ingenieria Informatica',texto: assigIngInf,),
-
-                        Assignaturasinfo(titulo: 'Ingenieria Mecanica',texto: assigIngMec,),
+                        Assignaturasinfo(
+                          titulo: 'Ingenieria Electronica',
+                          texto: assigIngElec,
+                        ),
+                        Assignaturasinfo(
+                          titulo: 'Logistica',
+                          texto: assigLogistica,
+                        ),
                       ],
                     ),
                     //final fila de espacios de assignaturas
                   ),
-                  Center( //inicio fila de espacios de assignaturas
+                  Center(
+                    //inicio fila de espacios de assignaturas
                     child: Wrap(
                       spacing: 40, // Espacio entre las columnas
                       runSpacing: 40, // Espacio entre filas si se desbordan
                       alignment: WrapAlignment.center,
                       children: [
-                         Assignaturasinfo(titulo: 'Ingenieria Informatica',texto: assigIngInf,),
-
-                        Assignaturasinfo(titulo: 'Ingenieria Mecanica',texto: assigIngMec,),
+                        Assignaturasinfo(
+                          titulo: 'Audiovisuales',
+                          texto: assigAudioVisuales,
+                        ),
+                        Assignaturasinfo(
+                          titulo: 'ADE',
+                          texto: assigAde,
+                        ),
                       ],
                     ),
                     //final fila de espacios de assignaturas
                   ),
-                  Center( //inicio fila de espacios de assignaturas
+                  Center(
+                    //inicio fila de espacios de assignaturas
                     child: Wrap(
                       spacing: 40, // Espacio entre las columnas
                       runSpacing: 40, // Espacio entre filas si se desbordan
                       alignment: WrapAlignment.center,
                       children: [
-                         Assignaturasinfo(titulo: 'Ingenieria Informatica',texto: assigIngInf,),
-
-                        Assignaturasinfo(titulo: 'Ingenieria Mecanica',texto: assigIngMec,),
+                        Assignaturasinfo(
+                          titulo: 'Marqueting',
+                          texto: assigMarqueting,
+                        ),
+                        Assignaturasinfo(
+                          titulo: 'CAFE',
+                          texto: assigCAFE,
+                        ),
                       ],
                     ),
                     //final fila de espacios de assignaturas

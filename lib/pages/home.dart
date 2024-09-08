@@ -30,27 +30,7 @@ class MyHomePage extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 10),
-                    const Text(
-                      'Grados Universitarios',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 35,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const Text(
-                      'Ingenieria Informatica \n '
-                      'Ingenieria Electronica\n'
-                      'Ingenieria Mecanica \n '
-                      'Logistica \n '
-                      'ADE\n'
-                      'Turismo \n'
-                      'Audiovisuales\n'
-                      'Marqueting \n',
-                      style: TextStyle(color: Colors.black, fontSize: 25),
-                      textAlign: TextAlign.center,
-                    ),
+                    
                     Align(
                       alignment: Alignment.center,
                       child: SizedBox(

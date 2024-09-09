@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:helpinguni/pages/precios.dart';
 
 import '../widgets/customAppBar.dart';
 import '../widgets/assignaturasInfo.dart';
@@ -109,6 +110,18 @@ class _PruebaState extends State<Clases> {
                       fontWeight: FontWeight.bold,
                     ),
                     textAlign: TextAlign.center,
+                  ),
+                  Center(
+                    child: FloatingActionButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Precios()),
+                        );
+                      },
+                      child: const Text('Consulta nuestros precios'),
+                    ),
                   ),
                   Center(
                     //inicio fila de espacios de assignaturas

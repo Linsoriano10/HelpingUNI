@@ -98,7 +98,16 @@ class _PruebaState extends State<Precios> {
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            
+                            FloatingActionButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Precios()),
+                                );
+                              },
+                              child: const Text('Consulta nuestros precios'),
+                            ),
                           ]))));
         }));
   }

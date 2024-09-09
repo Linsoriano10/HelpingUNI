@@ -35,7 +35,7 @@ class MyHomePage extends StatelessWidget {
                       child: SizedBox(
                         width: 180, // Ancho del botón
                         height: 60, // Altura del botón
-                        child: FloatingActionButton(
+                        child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -43,9 +43,7 @@ class MyHomePage extends StatelessWidget {
                                   builder: (context) => const Clases()),
                             );
                           },
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8),
-                          ),
+                         
                           child: const Text(
                             'Consultar Asignaturas',
                             textAlign: TextAlign.center,

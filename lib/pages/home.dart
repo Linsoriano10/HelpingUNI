@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/customAppBar.dart';
+//import '../widgets/customAppBar.dart';
+import '../widgets/pruebaCustomAppBar.dart';
 import 'clases.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -10,7 +11,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const WidgetCustomAppBar(titulo: 'Inicio'),
+      appBar: const Pruebacustomappbar(titulo: 'Inicio'),
       body: LayoutBuilder(
         builder: (context, constraints) {
           return SingleChildScrollView(

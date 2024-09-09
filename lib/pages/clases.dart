@@ -112,15 +112,28 @@ class _PruebaState extends State<Clases> {
                     textAlign: TextAlign.center,
                   ),
                   Center(
-                    child: FloatingActionButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Precios()),
-                        );
-                      },
-                      child: const Text('Consulta nuestros precios'),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: SizedBox(
+                        width: 180, // Ancho del botón
+                        height: 60, // Altura del botón
+                        child: FloatingActionButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Precios()),
+                            );
+                          },
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: const Text(
+                            'Consultar nuestros precios',
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   Center(

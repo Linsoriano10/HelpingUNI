@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../widgets/customAppBar.dart';
+import 'clases.dart';
 
 class Precios extends StatefulWidget {
   const Precios({super.key});
@@ -98,16 +99,29 @@ class _PruebaState extends State<Precios> {
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            FloatingActionButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const Precios()),
-                                );
-                              },
-                              child: const Text('Consulta nuestros precios'),
-                            ),
+                            Align(
+                      alignment: Alignment.center,
+                      child: SizedBox(
+                        width: 180, // Ancho del botón
+                        height: 60, // Altura del botón
+                        child: FloatingActionButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Clases()),
+                            );
+                          },
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: const Text(
+                            'Consultar Asignaturas',
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ),
                           ]))));
         }));
   }

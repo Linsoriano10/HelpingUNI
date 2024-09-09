@@ -100,28 +100,25 @@ class _PruebaState extends State<Precios> {
                               textAlign: TextAlign.center,
                             ),
                             Align(
-                      alignment: Alignment.center,
-                      child: SizedBox(
-                        width: 180, // Ancho del botón
-                        height: 60, // Altura del botón
-                        child: FloatingActionButton(
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Clases()),
-                            );
-                          },
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: const Text(
-                            'Consultar Asignaturas',
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    ),
+                              alignment: Alignment.center,
+                              child: SizedBox(
+                                width: 180, // Ancho del botón
+                                height: 60, // Altura del botón
+                                child: ElevatedButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => const Clases()),
+                                    );
+                                  },
+                                  child: const Text(
+                                    'Consultar Asignaturas',
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ),
+                            ),
                           ]))));
         }));
   }

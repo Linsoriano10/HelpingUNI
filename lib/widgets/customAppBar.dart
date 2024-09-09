@@ -57,7 +57,8 @@ class WidgetCustomAppBar extends StatelessWidget
           ),
         ),
         const SizedBox(width: 10),
-         TextButton( // Crear Pagina de Precios
+        TextButton(
+          // Crear Pagina de Precios
           onPressed: () {
             Navigator.push(
               context,
@@ -69,7 +70,7 @@ class WidgetCustomAppBar extends StatelessWidget
             style: TextStyle(fontSize: 25, color: Colors.black),
           ),
         ),
-        const SizedBox(width: 10),  // Otro espacio entre los botones
+        const SizedBox(width: 10), // Otro espacio entre los botones
         TextButton(
           onPressed: () {
             Navigator.push(
@@ -82,7 +83,8 @@ class WidgetCustomAppBar extends StatelessWidget
             style: TextStyle(fontSize: 25, color: Colors.black),
           ),
         ),
-        const SizedBox(width: 20), // Espacio adicional para el final si es necesario
+        const SizedBox(
+            width: 20), // Espacio adicional para el final si es necesario
       ],
     );
   }

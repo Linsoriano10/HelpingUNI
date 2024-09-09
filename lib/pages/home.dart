@@ -43,7 +43,6 @@ class MyHomePage extends StatelessWidget {
                                   builder: (context) => const Clases()),
                             );
                           },
-                         
                           child: const Text(
                             'Consultar Asignaturas',
                             textAlign: TextAlign.center,

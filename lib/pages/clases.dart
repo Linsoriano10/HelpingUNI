@@ -117,7 +117,7 @@ class _PruebaState extends State<Clases> {
                       child: SizedBox(
                         width: 180, // Ancho del botón
                         height: 60, // Altura del botón
-                        child: FloatingActionButton(
+                        child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -125,9 +125,6 @@ class _PruebaState extends State<Clases> {
                                   builder: (context) => const Precios()),
                             );
                           },
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8),
-                          ),
                           child: const Text(
                             'Consultar nuestros precios',
                             textAlign: TextAlign.center,

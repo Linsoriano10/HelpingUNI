@@ -30,7 +30,6 @@ class MyHomePage extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 10),
-                    
                     Align(
                       alignment: Alignment.center,
                       child: SizedBox(
@@ -84,38 +83,33 @@ class MyHomePage extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 10),
-                    const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Flexible(
+                    const Flexible(
+                      child: Text(
+                        'Quienes Somos?',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    const Flexible(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: SizedBox(
+                          width: 400,
                           child: Text(
-                            'Quienes Somos?',
+                            'Alumnos de grados de empresa, ingeniería y medios audiovisuales con un nivel académico excelente',
                             style: TextStyle(
                               color: Colors.black,
-                              fontSize: 30,
+                              fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
-                            textAlign: TextAlign.center,
+                            textAlign: TextAlign.center, // Texto centrado
                           ),
                         ),
-                        Flexible(
-                          child: Align(
-                            alignment: Alignment.center,
-                            child: SizedBox(
-                              width: 400,
-                              child: Text(
-                                'Alumnos de grados de empresa, ingeniería y medios audiovisuales con un nivel académico excelente',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                textAlign: TextAlign.center, // Texto centrado
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ],
                 ),

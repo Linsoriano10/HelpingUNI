@@ -10,8 +10,8 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const Pruebacustomappbar(titulo: 'Inicio'),
+    return CustomScaffold(
+      customAppBar: const Pruebacustomappbar(titulo: 'Inicio'),
       body: LayoutBuilder(
         builder: (context, constraints) {
           return SingleChildScrollView(

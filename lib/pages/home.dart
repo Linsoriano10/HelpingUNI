@@ -10,8 +10,13 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final GlobalKey<ScaffoldState> scaffoldKey =
+        GlobalKey<ScaffoldState>(); // Creamos una clave GlobalKey
     return CustomScaffold(
-      customAppBar: const Pruebacustomappbar(titulo: 'Inicio'),
+      customAppBar: Pruebacustomappbar(
+        titulo: 'Inicio',
+        scaffoldKey: scaffoldKey,
+      ), // Pasamos la clave al AppBar
       body: LayoutBuilder(
         builder: (context, constraints) {
           return SingleChildScrollView(

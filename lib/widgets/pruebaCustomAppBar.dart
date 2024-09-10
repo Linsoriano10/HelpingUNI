@@ -24,24 +24,26 @@ class Pruebacustomappbar extends StatelessWidget implements PreferredSizeWidget 
             titulo,
             style: const TextStyle(fontSize: 25, color: Colors.black),
           ),
-          leading: isSmallScreen
-              ? IconButton(
-                  icon: const Icon(Icons.menu, color: Colors.black),
-                  onPressed: () {
-                    Scaffold.of(context).openDrawer(); // Abre el Drawer
-                  },
-                )
-              : IconButton(
-                  icon: const Image(image: AssetImage('assets/logo.png')),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const MyHomePage()),
-                    );
-                  },
-                ),
+          // Si no es pantalla pequeña, aplicamos un leadingWidth de 100
+          leadingWidth: isSmallScreen ? null : 100.0,
+          leading: IconButton(
+            icon: const Image(image: AssetImage('assets/logo.png')),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const MyHomePage()),
+              );
+            },
+          ),
           actions: isSmallScreen
-              ? null // No mostramos las acciones en pantallas pequeñas, se muestran en el Drawer
+              ? [
+                  IconButton(
+                    icon: const Icon(Icons.menu, color: Colors.black),
+                    onPressed: () {
+                      Scaffold.of(context).openDrawer(); // Abre el Drawer
+                    },
+                  )
+                ]
               : [
                   _buildActionButton(context, 'INICIO', const MyHomePage()),
                   _buildActionButton(context, 'ASSIGNATURAS', const Clases()),

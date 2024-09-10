@@ -40,7 +40,8 @@ class Pruebacustomappbar extends StatelessWidget implements PreferredSizeWidget 
                   IconButton(
                     icon: const Icon(Icons.menu, color: Colors.black),
                     onPressed: () {
-                      Scaffold.of(context).openDrawer(); // Abre el Drawer
+                      // Usa ScaffoldMessenger para abrir el Drawer
+                      Scaffold.of(context).openEndDrawer(); 
                     },
                   )
                 ]
@@ -89,7 +90,7 @@ class CustomScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: customAppBar,
-      drawer: Drawer(
+      endDrawer: Drawer(  // Aquí cambiamos a endDrawer para abrir el Drawer desde el lado derecho
         child: ListView(
           padding: EdgeInsets.zero,
           children: [

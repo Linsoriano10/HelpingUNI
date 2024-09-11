@@ -18,7 +18,7 @@ class Contacto extends StatelessWidget {
     String mensaje = "";
     return CustomScaffold(
         customAppBar: const WidgetCustomAppBar(
-          titulo: 'Inicio',
+          titulo: '',
         ),
         body: LayoutBuilder(builder: (context, constraints) {
           return SingleChildScrollView(

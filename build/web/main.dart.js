@@ -74891,7 +74891,7 @@ J(a){return new A.le(new A.aaw(this),null)},
 ts(a,b,c){var s=null
 return A.aly(A.fz(b,s,s,s,B.xj,s,s),new A.aar(a,c),s)}}
 A.aaw.prototype={
-$2(a,b){var s,r=null,q=b.b<600,p=A.fz("Inicio",r,r,r,B.xj,r,r),o=q?r:100,n=A.a_E(r,B.Cb,new A.aau(a),r,r),m=t.E
+$2(a,b){var s,r=null,q=b.b<700,p=A.fz("",r,r,r,B.xj,r,r),o=q?r:100,n=A.a_E(r,B.Cb,new A.aau(a),r,r),m=t.E
 if(q)m=A.b([new A.dR(new A.aav(),r)],m)
 else{s=this.a
 m=A.b([s.ts(a,"INICIO",B.fA),s.ts(a,"ASSIGNATURAS",B.eG),s.ts(a,"PRECIOS",B.j2),s.ts(a,"CONTACTO",A.anR()),B.Ke],m)}return new A.mG(n,p,m,B.cm,new A.Pg(100,r,1/0,100),100,o,r)},

@@ -97,7 +97,7 @@ class _PruebaState extends State<Clases> {
       debugShowCheckedModeBanner: false,
       home: CustomScaffold(
       customAppBar: const WidgetCustomAppBar(
-        titulo: 'Inicio',
+        titulo: '',
       ),
         body: LayoutBuilder(
           builder: (context, constraints) {

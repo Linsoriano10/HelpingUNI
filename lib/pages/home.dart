@@ -12,7 +12,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScaffold(
       customAppBar: const WidgetCustomAppBar(
-        titulo: 'Inicio',
+        titulo: '',
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {

@@ -19,7 +19,7 @@ class WidgetCustomAppBar extends StatelessWidget implements PreferredSizeWidget 
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         // Detecta si la pantalla es pequeña (por debajo de 600px de ancho)
-        bool isSmallScreen = constraints.maxWidth < 600;
+        bool isSmallScreen = constraints.maxWidth < 700;
 
         return AppBar(
           toolbarHeight: 100,

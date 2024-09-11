@@ -45,8 +45,10 @@ class _PruebaState extends State<Precios> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: const WidgetCustomAppBar(titulo: 'Inicio'),
+    return CustomScaffold(
+        customAppBar: const WidgetCustomAppBar(
+          titulo: 'Inicio',
+        ),
         body: LayoutBuilder(builder: (context, constraints) {
           return SingleChildScrollView(
               child: Center(

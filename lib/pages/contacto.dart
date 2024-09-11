@@ -16,9 +16,9 @@ class Contacto extends StatelessWidget {
     String nombre = "";
     String correo = "";
     String mensaje = "";
-    return Scaffold(
-      appBar: const WidgetCustomAppBar(
-        titulo: 'contacto',
+    return CustomScaffold(
+      customAppBar: const WidgetCustomAppBar(
+        titulo: 'Inicio',
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

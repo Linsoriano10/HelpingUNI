@@ -95,8 +95,10 @@ class _PruebaState extends State<Clases> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: const WidgetCustomAppBar(titulo: 'Pruebas'),
+      home: CustomScaffold(
+      customAppBar: const WidgetCustomAppBar(
+        titulo: 'Inicio',
+      ),
         body: LayoutBuilder(
           builder: (context, constraints) {
             return SingleChildScrollView(

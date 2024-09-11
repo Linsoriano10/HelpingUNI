@@ -6,15 +6,12 @@ import '../pages/contacto.dart';
 import '../pages/home.dart';
 
 // Aquí está el CustomScaffold con el AppBar personalizado y el Drawer
-class Pruebacustomappbar extends StatelessWidget
-    implements PreferredSizeWidget {
+class Pruebacustomappbar extends StatelessWidget implements PreferredSizeWidget {
   final String titulo;
-  final GlobalKey<ScaffoldState> scaffoldKey; // Añadimos la clave del Scaffold
 
   const Pruebacustomappbar({
     super.key,
     required this.titulo,
-    required this.scaffoldKey, // Recibimos la clave del Scaffold
   });
 
   @override
@@ -43,13 +40,16 @@ class Pruebacustomappbar extends StatelessWidget
           ),
           actions: isSmallScreen
               ? [
-                  IconButton(
-                    icon: const Icon(Icons.menu, color: Colors.black),
-                    onPressed: () {
-                      scaffoldKey.currentState!
-                          .openEndDrawer(); // Abre el Drawer usando el GlobalKey
+                  Builder( // Builder para obtener el contexto correcto
+                    builder: (context) {
+                      return IconButton(
+                        icon: const Icon(Icons.menu, color: Colors.black),
+                        onPressed: () {
+                          Scaffold.of(context).openEndDrawer(); // Abre el Drawer desde el ícono del menú
+                        },
+                      );
                     },
-                  )
+                  ),
                 ]
               : [
                   _buildActionButton(context, 'INICIO', const MyHomePage()),
@@ -79,18 +79,15 @@ class Pruebacustomappbar extends StatelessWidget
   }
 
   @override
-  Size get preferredSize =>
-      const Size.fromHeight(100); // Tamaño personalizado para la AppBar
+  Size get preferredSize => const Size.fromHeight(100); // Tamaño personalizado para la AppBar
 }
 
 // Aquí está el Scaffold personalizado con el Drawer y AppBar
 class CustomScaffold extends StatelessWidget {
   final Pruebacustomappbar customAppBar;
   final Widget body;
-  final GlobalKey<ScaffoldState> scaffoldKey =
-      GlobalKey<ScaffoldState>(); // Creamos una clave GlobalKey
 
-  CustomScaffold({
+  const CustomScaffold({
     super.key,
     required this.customAppBar,
     required this.body,
@@ -99,17 +96,14 @@ class CustomScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: scaffoldKey, // Asignamos la clave GlobalKey al Scaffold
       appBar: customAppBar,
-      endDrawer: Drawer(
-        // Drawer que se abre desde el lado derecho en pantallas pequeñas
+      endDrawer: Drawer( // Drawer que se abre desde el lado derecho en pantallas pequeñas
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(color: Colors.blue),
-              child: Text('Menú',
-                  style: TextStyle(color: Colors.white, fontSize: 24)),
+              child: Text('Menú', style: TextStyle(color: Colors.white, fontSize: 24)),
             ),
             _buildDrawerItem(context, 'INICIO', const MyHomePage()),
             _buildDrawerItem(context, 'ASSIGNATURAS', const Clases()),
@@ -134,3 +128,6 @@ class CustomScaffold extends StatelessWidget {
     );
   }
 }
+
+// Página principal donde se usa el CustomScaffold
+

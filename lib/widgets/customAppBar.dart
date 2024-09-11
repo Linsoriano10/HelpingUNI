@@ -28,7 +28,7 @@ class WidgetCustomAppBar extends StatelessWidget implements PreferredSizeWidget 
             titulo,
             style: const TextStyle(fontSize: 25, color: Colors.black),
           ),
-          leadingWidth: isSmallScreen ? null : 100.0,
+          leadingWidth: 100.0,
           leading: IconButton(
             icon: const Image(image: AssetImage('assets/logo.png')),
             onPressed: () {

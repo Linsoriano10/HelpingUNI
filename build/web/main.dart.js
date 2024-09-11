@@ -40153,7 +40153,7 @@ a0=new A.l3(s==null?b2:s.NV(a1.c,a1.as,a1.d))}s=A.ex(a,b2,b2)
 a=A.a_F(s,a0)
 s=b1.a
 r=s.go
-a=new A.fP(A.j8(b2,r==null?56:r),a,b2)
+a=new A.fP(A.j8(b2,r),a,b2)
 a2=s.e
 a3=new A.Lg(a2,b2)
 a4=b3.w
@@ -74891,10 +74891,10 @@ J(a){return new A.le(new A.aaw(this),null)},
 ts(a,b,c){var s=null
 return A.aly(A.fz(b,s,s,s,B.xj,s,s),new A.aar(a,c),s)}}
 A.aaw.prototype={
-$2(a,b){var s,r=null,q=b.b<700,p=A.fz("",r,r,r,B.xj,r,r),o=q?r:100,n=A.a_E(r,B.Cb,new A.aau(a),r,r),m=t.E
-if(q)m=A.b([new A.dR(new A.aav(),r)],m)
+$2(a,b){var s,r=null,q=A.fz("",r,r,r,B.xj,r,r),p=A.a_E(r,B.Cb,new A.aau(a),r,r),o=t.E
+if(b.b<700)o=A.b([new A.dR(new A.aav(),r)],o)
 else{s=this.a
-m=A.b([s.ts(a,"INICIO",B.fA),s.ts(a,"ASSIGNATURAS",B.eG),s.ts(a,"PRECIOS",B.j2),s.ts(a,"CONTACTO",A.anR()),B.Ke],m)}return new A.mG(n,p,m,B.cm,new A.Pg(100,r,1/0,100),100,o,r)},
+o=A.b([s.ts(a,"INICIO",B.fA),s.ts(a,"ASSIGNATURAS",B.eG),s.ts(a,"PRECIOS",B.j2),s.ts(a,"CONTACTO",A.anR()),B.Ke],o)}return new A.mG(p,q,o,B.cm,new A.Pg(100,r,1/0,100),100,100,r)},
 $S:461}
 A.aau.prototype={
 $0(){var s=A.qp(new A.aat(),null,t.z)

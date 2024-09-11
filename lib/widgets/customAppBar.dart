@@ -128,6 +128,3 @@ class CustomScaffold extends StatelessWidget {
     );
   }
 }
-
-// Página principal donde se usa el CustomScaffold
-

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //import '../widgets/customAppBar.dart';
-import '../widgets/pruebaCustomAppBar.dart';
+import '../widgets/customAppBar.dart';
 import 'clases.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -11,7 +11,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomScaffold(
-      customAppBar: const Pruebacustomappbar(
+      customAppBar: const WidgetCustomAppBar(
         titulo: 'Inicio',
       ),
       body: LayoutBuilder(

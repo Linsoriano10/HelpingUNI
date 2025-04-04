@@ -1,0 +1,4 @@
+1r Trimestre
+-Fonaments de la Programació
+-Programació Orientada a Objectes
+-Programació Avançada
